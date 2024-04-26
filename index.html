@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Cook Today</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TasteBuds</h1>
+            <p>Welcome to our food suggestion website, your ultimate culinary companion! Explore a delightful array of recipes, restaurant picks, and cooking tips tailored to your taste buds. Whether you're a seasoned chef or a kitchen newbie, let us inspire your next delicious adventure!</p>
+            <input type="text" id="searchInput" placeholder="Search for a meal..." oninput="searchMeal(this.value)">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">Random Meal
+            <section id="randomMealSection">
+
+            </section>
+
+            <section id="searchResultsSection" style="display: none;">
+
+            </section>
+        </div>
+    </main>
+
+    <div id="ingredientModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalMealName"></h2>
+            <div id="ingredientList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
